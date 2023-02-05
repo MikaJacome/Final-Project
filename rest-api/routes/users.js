@@ -49,7 +49,7 @@ router.get("/:id", async (req, res) => {
       res.status(500).json(err);
     }
   });
-  
+ 
 //Follow
 router.put("/:id/follow", async (req, res) => {
     if (req.body.userId !== req.params.id) {
@@ -67,10 +67,10 @@ router.put("/:id/follow", async (req, res) => {
         res.status(500).json(err);
       }
     } else {
-      res.status(403).json("you cant follow yourself");
+      res.status(403).json("you can't follow yourself");
     }
   });  
-  
+   
 //Unfollow
 router.put("/:id/unfollow", async (req, res) => {
     if (req.body.userId !== req.params.id) {
@@ -79,7 +79,7 @@ router.put("/:id/unfollow", async (req, res) => {
         const currentUser = await User.findById(req.body.userId);
         if (user.followers.includes(req.body.userId)) {
           await user.updateOne({ $pull: { followers: req.body.userId } });
-          await currentUser.updateOne({ $pull: { followings: req.params.id } });
+          await currentUser.updateOne({ $pull: { following: req.params.id } });
           res.status(200).json("user has been unfollowed");
         } else {
           res.status(403).json("you dont follow this user");
