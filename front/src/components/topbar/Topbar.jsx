@@ -5,7 +5,7 @@ export default  function Topbar() {
     return(
         <div className="topbarContainer">
             <div className="topbarLeft">
-                <span className="logo"><img src="front\public\assets\media\got-logo.png" alt="" /></span>
+                <span className="logo"><img src="assets\media\got-logo.png" alt="" /></span>
             </div>
             <div className="topbarCenter">
                 <div className="searchBar">
@@ -32,7 +32,7 @@ export default  function Topbar() {
                     <span className="topbarIconBadge">3</span>
                 </div>
             </div>
-            <img src="../../../public/assets/media/boy-1.png" alt="" className="topbarImg" />
+            <img src="/assets/media/boy-1.png" alt="" className="topbarImg" />
         </div>
     )
 }
