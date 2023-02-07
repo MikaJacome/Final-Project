@@ -1,6 +1,6 @@
-import Topbar from "../topbar/Topbar";
+import Topbar from "../Topbar/Topbar";
 import Leftbar from "../../components/Leftbar/Leftbar";
-import Feed from "../feed/feed";
+import Feed from "../Feed/feed";
 
 export default function Home(){
     return(
