@@ -53,7 +53,7 @@ const UserSchema = new mongoose.Schema(
         },
         travel:{
             type: String,
-            max: 50,
+            max: 250,
         },
         from:{
             type: String,

@@ -1,41 +1,4 @@
 const mongoose = require("mongoose");
-/*
-const TravelerSchema = new mongoose.Schema(
-    {
-        userId:{
-            type: String,
-            required: true
-        },
-        profilePicture:{
-            type:String,
-            required:true,
-        },
-        
-        from:{
-            type:String,
-            max:500,
-            required:true,
-        },
-        dest:{
-            type:String,
-            max: 500,
-            required:true,
-        },
-        
-        desc:{
-            type: String,
-            max: 500,
-        },
-        
-        heys:{
-            type: Array,
-            default:[],
-        },
-    },
-    {timestamps:true}
-);
-
-*/
 
 const TravelerSchema = new mongoose.Schema(
     {
