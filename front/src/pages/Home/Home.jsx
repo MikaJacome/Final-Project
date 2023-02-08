@@ -1,6 +1,7 @@
-import Topbar from "../Topbar/Topbar";
+import Topbar from "../../components/Topbar/Topbar";
 import Leftbar from "../../components/Leftbar/Leftbar";
-import Feed from "../Feed/feed";
+import Feed from "../../components/Feed/Feed";
+import "./home.css"
 
 export default function Home(){
     return(

@@ -1,0 +1,51 @@
+.leftbar{
+    flex: 2;
+    height: calc(100vh - 70px);
+    overflow-y: scroll;
+    background-color: #F6EFE7;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #B2C4BE;
+}
+
+::-webkit-slider-thumb{
+    background-color: #384B45;
+}
+
+.leftWrap{
+    padding: 20px;
+}
+
+.leftItem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.leftIcon{
+    margin-right: 10px;
+}
+
+.leftFavTravellers{
+    padding: 0;
+    margin: 0;
+}
+
+.leftFav{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.leftFavPhoto{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px;
+}

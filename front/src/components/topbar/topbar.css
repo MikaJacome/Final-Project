@@ -1,7 +1,7 @@
 .topbarContainer{
     height: 70px;
     width: 100%;
-    background-color: #023aac;
+    background-color: #FFEF63;
     display:flex ;
     align-items: center;
     position: sticky;
@@ -51,7 +51,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    color: #f5f5f5;    
+    color: #272525;    
 }
 
 .topbarLink{

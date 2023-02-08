@@ -1,5 +1,5 @@
 import "./topbar.css";
-import {Chat, Search, Person, Notifications} from "@mui/icons-material";
+import {ChatBubbleRounded, Search, Person, Wallet} from "@mui/icons-material";
 
 export default  function Topbar() {
     return(
@@ -36,13 +36,12 @@ export default  function Topbar() {
                     </div>
 
                     <div className="topbarIconItem">
-                        <Chat/>
+                        <ChatBubbleRounded/>
                         <span className="topbarIconBadge">5</span>
                     </div>
                     
                     <div className="topbarIconItem">
-                        <Notifications/>
-                        <span className="topbarIconBadge">3</span>
+                        <Wallet/>
                     </div>
 
                 </div>
