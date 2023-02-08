@@ -72,34 +72,14 @@ router.get("/:id", async(req,res)=>{
 });
 
 //get all travelers
-/*
-router.get('/init/all',async(req,res,next)=>{
-    try{
-        const id=req.params.id;
-        const travelers=await Traveler.findById(id);
-        res.json({result:Traveler});
-    }catch(err){
+router.get("/init/all", async (req, res, next) => {
+    try {
+        const travelers = await Traveler.find({});
+        res.json({ result: travelers });
+    } catch (err) {
         next(err);
     }
 });
-*/
-router.get("/init/all", async (req, res) => {
-    const qNew = req.query.new;
-    try {
-      let traveler;
-  
-      if (qNew) {
-        traveler = await Traveler.find().sort({ createdAt: -1 }).limit(1);
-        traveler = await Product.find();
-      }
-  
-      res.status(200).json(traveler);
-    } catch (err) {
-      res.status(500).json(err);
-    }
-  });
-  
-
 
 module.exports = router;
 
