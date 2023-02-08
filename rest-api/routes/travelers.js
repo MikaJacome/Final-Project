@@ -93,7 +93,7 @@ router.get("/init/all", async (req, res) => {
         traveler = await Product.find();
       }
   
-      res.status(200).json(travelers);
+      res.status(200).json(traveler);
     } catch (err) {
       res.status(500).json(err);
     }

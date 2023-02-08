@@ -27,6 +27,6 @@ app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
 app.use("/api/travelers", travelerRoute);
 
-app.listen(3033,()=> {
+app.listen(5050,()=> {
     console.log("Backend server is now running!");
 });
