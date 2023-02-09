@@ -1,5 +1,5 @@
 .leftbar{
-    flex: 2;
+    flex: 0,5;
     height: calc(100vh - 70px);
     overflow-y: scroll;
     background-color: #F6EFE7;
