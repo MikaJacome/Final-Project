@@ -1,7 +1,6 @@
 import "./travel.css";
-import { PermMedia } from "@mui/icons-material";
 
-export default function createTravel() {
+export default function CreateTravel() {
     return(
         <div className="travel">
 

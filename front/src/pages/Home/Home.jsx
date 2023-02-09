@@ -3,7 +3,7 @@ import Leftbar from "../../components/Leftbar/Leftbar";
 import Feed from "../../components/Feed/Feed";
 import Journey from "../../components/Journey/Journey";
 import "./home.css"
-import createTravel from "../../components/Travel/createTravel";
+import CreateTravel from "../../components/Travel/createTravel";
 
 export default function Home(){
     return(
@@ -17,7 +17,7 @@ export default function Home(){
                 <div>
                 <Journey/>
 
-                <createTravel/>
+                <CreateTravel/>
 
 
                 </div>
