@@ -22,11 +22,11 @@ export default function Feed(){
 
             <div className="feedBody">
 
-                <div>
+                <div className="feedTravel">
                     <TravelDetail/>
                 </div>
                 
-                <div>
+                <div className="feedJourney">
                     <JourneyDetail/>
                 </div>
 

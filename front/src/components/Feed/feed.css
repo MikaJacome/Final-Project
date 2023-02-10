@@ -1,8 +1,5 @@
 .feed{
     flex:1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
 
 .feedHead{
@@ -12,7 +9,20 @@
 }
 
 .feedBody{
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.feedTravel{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.feedJourney{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
 }
