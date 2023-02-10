@@ -1,27 +1,27 @@
-.journeyDetail{
-    width: 700px;
-    height: 450px;
+.travelDetail{
+    width: 410px;
+    height: 270px;
     border-radius: 25px;
     -webkit-box-shadow: 0 0 16px -8px rgba(0, 0, 0, 0.68);
     box-shadow: 0 0 16px -8px rgba(0, 0, 0, 0.68);
 }
 
-.jdetailWrap{
+.tdetailWrap{
     padding: 15px;
 }
 
-.jdetailTop{
+.tdetailTop{
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
 }
 
-.jdetailData{
+.tdetailData{
     display: flex;
     align-items: center;
 }
 
-.jdetailPP{
+.travelPP{
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -35,47 +35,44 @@
     margin: 0 10px;
 }
 
-.jdetailMore{
+.tdetailMore{
     display: flex;
     align-items: center;
 }
 
-.jdetailiBody{
-    margin: 20px 0;
+.tdetailBody{
+    
+    direction: column;
+    justify-content: space-around;
+    padding-top: 15px;
 }
 
-.jdetailImg{
-    justify-content: center;
-    margin-top: 20px;
-    width: 80%;
-    max-height: 250px;
-    object-fit: contain;
+.tdetailButtons{
+    height: 30px;
 }
 
-.jdetailButtons{
+.buttons{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
+    margin-left: 20px;
+    padding-top: 40px;
 }
 
-.jdetailLikes{
+.option{
     display: flex;
     align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
 }
 
-.like{
+.hey{
     width: 25px;
     height: 25px;
     margin-right: 5px;
     cursor: pointer;
 }
 
-.likesCount{
+.heysCount{
     font-size: 14px;
-}
-
-.commentsCount{
-    border-bottom: solid #708090;
-    font-size: 14px;
-    cursor: pointer;
 }

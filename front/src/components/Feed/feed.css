@@ -1,8 +1,18 @@
 .feed{
     flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.feeedWrap{
-    padding: 20px;
-    
+.feedHead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.feedBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }

@@ -41,10 +41,21 @@ export default function CreateTravel() {
 
                     </div>
 
+                    <div className="notes">
+                        <span className=""notesField> 
+                        <label>Notes:</label>
+                        <input 
+                            placeholder="More details"
+                            className="travelDesc"
+                        />
+                        </span>
+                    </div>
+
+
                     <div >
                         <span className="priceField">
                         <label>Price:</label>
-                        <input  type="range" min={10} max={20} step={2}></input>
+                        <input  type="text" placeholder="How much ?"></input>
                         </span>
                     </div>
 
