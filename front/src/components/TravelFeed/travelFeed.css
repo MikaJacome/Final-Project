@@ -1,0 +1,23 @@
+.tfeed{
+    flex:4.5;
+    padding-right: 20px;
+}
+
+.tFeedHead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.tFeedBody{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.tDeatail{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
