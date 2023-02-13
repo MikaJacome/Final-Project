@@ -2,85 +2,85 @@ export const Users =[
 
     {
         id:1,
-        profilePicture:"../public/assets/media/boy-1.png",
-        username:"Jude Fletch",
+        profilePicture: "assets/media/boy-1.png",
+        username: "Jude Fletch",
     },
 
     {
         id:2,
-        profilePicture:"../public/assets/media/boy-2.png",
-        username:"Leonard Carson",
+        profilePicture: "assets/media/boy-2.png",
+        username: "Leonard Carson",
     },
 
     {
         id:3,
-        profilePicture:"../public/assets/media/boy-3.png",
+        profilePicture: "assets/media/boy-3.png",
         username:"Michael Yan",
     },
 
     {
         id:4,
-        profilePicture:"../public/assets/media/boy-4.png",
+        profilePicture: "assets/media/boy-4.png",
         username:"Carlos Peña",
     },
 
     {
         id:5,
-        profilePicture:"../public/assets/media/girl-1.png",
-        username:"Patricia González",
+        profilePicture: "assets/media/girl-1.png",
+        username: "Patricia González",
     },
 
     {
         id:6,
-        profilePicture:"../public/assets/media/girl-2.png",
+        profilePicture: "assets/media/girl-2.png",
         username:"Corrine Jepsen",
     },
 
     {
         id:7,
-        profilePicture:"../public/assets/media/girl-3.png",
+        profilePicture: "assets/media/girl-3.png",
         username:"Alex Scott",  
     },
 
     {
         id:8,
-        profilePicture:"../public/assets/media/girl-4.png",
-        username:"Jude Fletch",  
+        profilePicture: "assets/media/girl-4.png",
+        username:"Martine Cruise",  
     },
 
     
 ]
 
-export const JourneyDetail = [
+export const JourneyDetails = [
     {
-        id:1,
+        id: 1,
         desc: "Nice markets!",
-        photo:"../public/assets/media/monistraki-Athens.jpg",
-        userId:1,
-        likes:45,
-        comments:12,
+        photo: "assets/media/monistraki-Athens.jpg",
+        userId: 1,
+        likes: 45,
+        comments: 12,
     },
 
     {
         id:2,
         desc: "Fancy streets!",
-        photo:"../public/assets/media/mollat-bordeaux.jpg",
-        userId:2,
-        likes:38,
-        comments:9,
+        photo: "assets/media/mollat-bordeaux.jpg",
+        userId: 2,
+        likes: 38,
+        comments: 9,
     },
 
     {
-        id:3,
+        id: 3,
         desc: "I'll take 2!",
-        photo:"../public/assets/media/greek-carpet.jpg",
-        userId:1,
-        likes:45,
-        comments:12
+        photo: "assets/media/greek-carpet.jpg",
+        userId: 8,
+        likes: 45,
+        comments: 12,
     },
 ]
 
-export const TravelDetail = [
+export const TravelDetails = [
     {
         id:1,
         userId:1,

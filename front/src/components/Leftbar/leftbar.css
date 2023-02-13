@@ -2,7 +2,9 @@
     flex: 0,5;
     height: calc(100vh - 70px);
     overflow-y: scroll;
+    position: sticky;
     background-color: #F6EFE7;
+    top: 70px;
 }
 
 ::-webkit-scrollbar{

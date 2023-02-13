@@ -1,7 +1,9 @@
 import { MoreVertTwoTone, SentimentVerySatisfied} from "@mui/icons-material";
 import "./journeyDetail.css";
+import { Users } from "../../testData";
 
-export default function JourneyDetail(){
+export default function JourneyDetail({journeyDetail}){
+
     return(
         <div className="journeyDetail">
 
@@ -10,8 +12,13 @@ export default function JourneyDetail(){
                 <div className="jdetailTop">
 
                     <div className="jdetailData">
-                        <img src="/assets/media/boy-1.png" alt="" className="jdetailPP" />
-                        <span className="profileName">Jude Fletch</span>
+                        <img className="jdetailPP" 
+                            src={Users.filter((u) => u.id === journeyDetail?.userId)[0].profilePicture}
+                            alt=""    
+                        />
+                        <span className="profileName">
+                            {Users.filter((u) => u.id === journeyDetail?.userId)[0].username}
+                        </span>
                     </div>
                     
                     <div className="jdetailMore">
@@ -21,8 +28,8 @@ export default function JourneyDetail(){
 
                 <div className="jdetailiBody">
 
-                    <span className="jdetailText">Amazing places in Athens</span>
-                    <img src="/assets/media/monistraki-Athens.jpg" alt="" className="jdetailImg"/>
+                    <span className="jdetailText">{journeyDetail?.desc}</span>
+                    <img src={journeyDetail.photo} alt="" className="jdetailImg"/>
 
                 </div>
 
@@ -30,11 +37,11 @@ export default function JourneyDetail(){
 
                     <div className="jdetailLikes">
                         <SentimentVerySatisfied className="like"/>
-                        <span className="likesCount">90 People Liked It!</span>
+                        <span className="likesCount">{journeyDetail.likes} People Liked It!</span>
                     </div>
 
                     <div className="jdetailComments">
-                        <span className="commentsCount">20 Comments</span>
+                        <span className="commentsCount">{journeyDetail.comments} Comments</span>
                     </div>
 
                 </div>                

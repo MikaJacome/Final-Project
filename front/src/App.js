@@ -1,9 +1,9 @@
-import Home from "./pages/Home/Home";
+import Inspiration from "./pages/Inspiration/Inspiration";
 
 
 function App() {
   return (
-    <Home/>
+    <Inspiration/>
   );
 }
 

@@ -2,14 +2,14 @@ import Topbar from "../../components/Topbar/Topbar";
 import Leftbar from "../../components/Leftbar/Leftbar";
 import Feed from "../../components/Feed/Feed";
 import TravelFeed from "../../components/TravelFeed/TravelFeed";
-import "./home.css"
+import "./inspiration.css"
 
 
-export default function Home(){
+export default function Inspiration(){
     return(
         <>
             <Topbar/>
-            <div className="homeContainer">
+            <div className="inspirationContainer">
                 <Leftbar/>
                 <Feed/>
                 <TravelFeed/>

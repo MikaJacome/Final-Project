@@ -2,27 +2,6 @@
     flex:4.5;
 }
 
-.feedHead{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.feedBody{
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.feedTravel{
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.feedJourney{
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
+.feedWrap{
+    padding: 15px 30px 15px 30px; 
 }
