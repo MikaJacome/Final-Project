@@ -87,8 +87,8 @@ export const TravelDetails = [
         from:"Madrid",
         dest:"Athens",
         return:"26/02/2023",
-        price:"5",
         desc:"Only small things",
+        price:"5",
         heys:3,
     },
 
@@ -98,8 +98,8 @@ export const TravelDetails = [
         from:"Boston",
         dest:"Cairo",
         return:"16/03/2023",
-        price:"5",
         desc:"Hit me up!",
+        price:"5",
         heys:5,
     },
 
@@ -109,8 +109,8 @@ export const TravelDetails = [
         from:"Monterrey",
         dest:"Buenos Aires",
         return:"15/02/2023",
-        price:"10",
         desc:"May, I'll return earlier",
+        price:"10",
         heys:9,
     },
     {
@@ -119,8 +119,8 @@ export const TravelDetails = [
         from:"Paris",
         dest:"Barcelona",
         return:"26/02/2023",
-        price:"5",
         desc:"Quoi que ce soit.",
+        price:"5",
         heys:2,
     },
     {
@@ -129,8 +129,8 @@ export const TravelDetails = [
         from:"India",
         dest:"Berlín",
         return:"2/03/2023",
-        price:"5",
         desc:"Stelle Sie sicher, dass durch den Zoll gehen kann",
+        price:"5",
         heys:1,
     },
 ]

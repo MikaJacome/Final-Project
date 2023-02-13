@@ -1,4 +1,4 @@
-import Inspiration from "./pages/Inspiration/Inspiration";
+import Inspiration from "./pages/inspiration/Inspiration";
 
 
 function App() {

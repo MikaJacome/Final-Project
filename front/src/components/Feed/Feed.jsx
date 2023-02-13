@@ -9,8 +9,8 @@ export default function Feed(){
             
             <div className="feedWrap">
                 <Journey/>
-                {JourneyDetails.map(dt=>(
-                    <JourneyDetail key={dt.id} journeyDetail = {dt} />
+                {JourneyDetails.map(jd=>(
+                    <JourneyDetail key={jd.id} journeyDetail = {jd} />
                 ))}
                 
             </div>

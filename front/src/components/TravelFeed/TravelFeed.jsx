@@ -7,24 +7,18 @@ export default function TravelFeed(){
     return(
         <div className="tFeed">
 
-        <div className="tFeedHead">
+            <div className="tFeedWrap">
 
-            <div>
                 <CreateTravel/>
-            </div>
+                {TravelDetails.map(td => (
+                    <TravelDetail key={td.id} travelDetail = {td}/>
+                ))}
+                
             
             
             
-        </div>
-
-        <div className="tFeedBody">
-            
-            <div className="tDeatail">
-                <TravelDetail/>
             </div>
 
         </div>
-
-    </div>
     )
 }
