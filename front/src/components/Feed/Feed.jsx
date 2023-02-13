@@ -1,7 +1,5 @@
 import Journey from "../Journey/Journey"
 import JourneyDetail from "../journeyDetail/JournyeDetail"
-import CreateTravel from "../Travel/CreateTravel"
-import TravelDetail from "../travelDetail/TravelDetail"
 import "./feed.css"
 
 export default function Feed(){
@@ -14,17 +12,11 @@ export default function Feed(){
                     <Journey/>
                 </div>
                 
-                <div>
-                <CreateTravel/>
-                </div>
+                
                 
             </div>
 
             <div className="feedBody">
-
-                <div className="feedTravel">
-                    <TravelDetail/>
-                </div>
                 
                 <div className="feedJourney">
                     <JourneyDetail/>
