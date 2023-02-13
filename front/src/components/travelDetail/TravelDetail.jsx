@@ -1,7 +1,8 @@
 import "./travelDetail.css"
 import { MoreVertTwoTone,PanTool, QuestionAnswer } from "@mui/icons-material";
+import {Users} from "../../testData";
 
-export default function TravelDetail () {
+export default function TravelDetail ({travelDetail}) {
     return (
         <div className="travelDetail">
 
@@ -10,8 +11,13 @@ export default function TravelDetail () {
                 <div className="tdetailTop">
 
                     <div className="tdetailData">
-                        <img src="/assets/media/boy-1.png" alt="" className="travelPP" />
-                        <span className="profileName">Jude Fletch</span>
+                        <img 
+                            src={Users.filter((u) => u.id === travelDetail?.userId)[0].profilePicture}  
+                            alt="" className="travelPP" 
+                        />
+                        <span className="profileName">
+                            {Users.filter((u) => u.id === travelDetail?.userId)[0].username}
+                        </span>
                     </div>
                     
                     <div className="tdetailMore">
@@ -25,7 +31,7 @@ export default function TravelDetail () {
                     <div className="tdetailDeparture">
                         <span className="departureField">
                         <label>Departure: </label>
-                        <span>Madrid</span>
+                        <span>{travelDetail.from}</span>
                         </span>
 
                     </div>
@@ -34,7 +40,7 @@ export default function TravelDetail () {
 
                         <span className="arrivalField">
                         <label>Arrival: </label>
-                        <span>Athens</span>
+                        <span>{travelDetail.dest}</span>
                         </span>
 
                     </div>
@@ -42,16 +48,16 @@ export default function TravelDetail () {
                     <div className="return">
 
                         <span className="returnField">
-                        <label>Return: 23/02/2023</label>
-                        <span></span>
+                        <label>Return: </label>
+                        <span>{travelDetail.return}</span>
                         </span>
 
                     </div>
 
                     <div>
                             
-                        <label>Notes:</label>
-                        <span>Only small things please!</span>
+                        <label>Note:</label>
+                        <span>{travelDetail.desc}</span>
 
                     </div>
 
@@ -59,7 +65,7 @@ export default function TravelDetail () {
                     <div >
                         <span className="priceField">
                         <label>Price: </label>
-                        <span>5 €</span>
+                        <span>{travelDetail.price} €</span>
                         </span>
                     </div>
 
@@ -70,7 +76,7 @@ export default function TravelDetail () {
 
                     <div className="option">
                         <PanTool className="hey"/>
-                        <span className="heysCount">5 People said Hey!</span>
+                        <span className="heysCount">{travelDetail.heys} People said Hey!</span>
                     </div>
 
                     <div className="option">

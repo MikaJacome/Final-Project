@@ -1,23 +1,14 @@
 .tfeed{
-    flex:4.5;
+    flex:8.5;
     padding-right: 20px;
+    height: calc(100vh - 70px);
+    overflow-y: scroll;
+    position: sticky;
+    top: 70px;
 }
 
-.tFeedHead{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.tFeedWrap{
+    padding: 15px 30px 15px 50px;
+    margin-right: 50px;
 }
 
-.tFeedBody{
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.tDeatail{
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
-}
