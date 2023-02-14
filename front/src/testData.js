@@ -2,49 +2,49 @@ export const Users =[
 
     {
         id:1,
-        profilePicture: "assets/media/boy-1.png",
+        profilePicture: "media/boy-1.png",
         username: "Jude Fletch",
     },
 
     {
         id:2,
-        profilePicture: "assets/media/boy-2.png",
+        profilePicture: "media/boy-2.png",
         username: "Leonard Carson",
     },
 
     {
         id:3,
-        profilePicture: "assets/media/boy-3.png",
+        profilePicture: "media/boy-3.png",
         username:"Michael Yan",
     },
 
     {
         id:4,
-        profilePicture: "assets/media/boy-4.png",
+        profilePicture: "media/boy-4.png",
         username:"Carlos Peña",
     },
 
     {
         id:5,
-        profilePicture: "assets/media/girl-1.png",
+        profilePicture: "media/girl-1.png",
         username: "Patricia González",
     },
 
     {
         id:6,
-        profilePicture: "assets/media/girl-2.png",
+        profilePicture: "media/girl-2.png",
         username:"Corrine Jepsen",
     },
 
     {
         id:7,
-        profilePicture: "assets/media/girl-3.png",
+        profilePicture: "media/girl-3.png",
         username:"Alex Scott",  
     },
 
     {
         id:8,
-        profilePicture: "assets/media/girl-4.png",
+        profilePicture: "media/girl-4.png",
         username:"Martine Cruise",  
     },
 
@@ -55,7 +55,7 @@ export const JourneyDetails = [
     {
         id: 1,
         desc: "Nice markets!",
-        photo: "assets/media/monistraki-Athens.jpg",
+        photo: "media/monistraki-Athens.jpg",
         userId: 1,
         likes: 45,
         comments: 12,
@@ -64,7 +64,7 @@ export const JourneyDetails = [
     {
         id:2,
         desc: "Fancy streets!",
-        photo: "assets/media/mollat-bordeaux.jpg",
+        photo: "media/mollat-bordeaux.jpg",
         userId: 2,
         likes: 38,
         comments: 9,
@@ -73,7 +73,7 @@ export const JourneyDetails = [
     {
         id: 3,
         desc: "I'll take 2!",
-        photo: "assets/media/greek-carpet.jpg",
+        photo: "media/greek-carpet.jpg",
         userId: 8,
         likes: 45,
         comments: 12,

@@ -4,6 +4,7 @@ import { Users } from "../../testData";
 import { useState } from "react";
 
 export default function JourneyDetail({journeyDetail}){
+    const PF = process.env.REACT_APP_PUBLIC_FOLDER;
     
     const [like, setLike] = useState(journeyDetail.likes);
     const [isLiked, setIsLiked] = useState(false);
@@ -22,7 +23,7 @@ export default function JourneyDetail({journeyDetail}){
 
                     <div className="jdetailData">
                         <img className="jdetailPP" 
-                            src={Users.filter((u) => u.id === journeyDetail?.userId)[0].profilePicture}
+                            src={PF+Users.filter((u) => u.id === journeyDetail?.userId)[0].profilePicture}
                             alt=""    
                         />
                         <span className="profileName">
@@ -38,7 +39,7 @@ export default function JourneyDetail({journeyDetail}){
                 <div className="jdetailiBody">
 
                     <span className="jdetailText">{journeyDetail?.desc}</span>
-                    <img src={journeyDetail.photo} alt="" className="jdetailImg"/>
+                    <img src={PF+journeyDetail.photo} alt="" className="jdetailImg"/>
 
                 </div>
 

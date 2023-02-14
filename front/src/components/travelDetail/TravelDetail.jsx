@@ -4,9 +4,10 @@ import {Users} from "../../testData";
 import { useState } from "react";
 
 export default function TravelDetail ({travelDetail}) {
+    const PF = process.env.REACT_APP_PUBLIC_FOLDER;
 
     const [hey, setHey] = useState(travelDetail.heys);
-  const [isHeyed, setIsHeyed] = useState(false);
+    const [isHeyed, setIsHeyed] = useState(false);
 
   const heysHandler = () => {
     setHey(isHeyed ? hey - 1 : hey + 1);
@@ -22,7 +23,7 @@ export default function TravelDetail ({travelDetail}) {
 
                     <div className="tdetailData">
                         <img 
-                            src={Users.filter((u) => u.id === travelDetail?.userId)[0].profilePicture}  
+                            src={PF+Users.filter((u) => u.id === travelDetail?.userId)[0].profilePicture}  
                             alt="" className="travelPP" 
                         />
                         <span className="profileName">
