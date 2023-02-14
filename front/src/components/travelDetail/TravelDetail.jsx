@@ -1,8 +1,18 @@
 import "./travelDetail.css"
 import { MoreVertTwoTone,PanTool, QuestionAnswer } from "@mui/icons-material";
 import {Users} from "../../testData";
+import { useState } from "react";
 
 export default function TravelDetail ({travelDetail}) {
+
+    const [hey, setHey] = useState(travelDetail.heys);
+  const [isHeyed, setIsHeyed] = useState(false);
+
+  const heysHandler = () => {
+    setHey(isHeyed ? hey - 1 : hey + 1);
+    setIsHeyed(!isHeyed);
+  };
+
     return (
         <div className="travelDetail">
 
@@ -75,8 +85,8 @@ export default function TravelDetail ({travelDetail}) {
                 <div className="buttons">
 
                     <div className="option">
-                        <PanTool className="hey"/>
-                        <span className="heysCount">{travelDetail.heys} People said Hey!</span>
+                        <PanTool className="hey" onClick={heysHandler} />
+                        <span className="heysCount">{hey} People said Hey!</span>
                     </div>
 
                     <div className="option">

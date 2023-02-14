@@ -1,8 +1,17 @@
 import { MoreVertTwoTone, SentimentVerySatisfied} from "@mui/icons-material";
 import "./journeyDetail.css";
 import { Users } from "../../testData";
+import { useState } from "react";
 
 export default function JourneyDetail({journeyDetail}){
+    
+    const [like, setLike] = useState(journeyDetail.likes);
+    const [isLiked, setIsLiked] = useState(false);
+    
+    const likesHandler =() => {
+        setLike(isLiked ? like - 1 : like + 1);
+        setIsLiked(!isLiked);
+    };
 
     return(
         <div className="journeyDetail">
@@ -36,8 +45,8 @@ export default function JourneyDetail({journeyDetail}){
                 <div className="jdetailButtons">
 
                     <div className="jdetailLikes">
-                        <SentimentVerySatisfied className="like"/>
-                        <span className="likesCount">{journeyDetail.likes} People Liked It!</span>
+                    <SentimentVerySatisfied className="like" onClick={likesHandler} />
+                    <span className="likesCount">{like} People Liked It!</span>
                     </div>
 
                     <div className="jdetailComments">
@@ -49,5 +58,5 @@ export default function JourneyDetail({journeyDetail}){
             </div>
 
         </div>
-    )
+    );
 }
