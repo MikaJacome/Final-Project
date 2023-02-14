@@ -21,6 +21,18 @@ const TravelerSchema = new mongoose.Schema(
             max: 500,
             required:true,
         },
+
+        return:{
+            type:String,
+            max:500,
+            required:true,
+        },
+
+        price:{
+            type: String,
+            max:500,
+            required:true,
+        },
         
         desc:{
             type: String,
