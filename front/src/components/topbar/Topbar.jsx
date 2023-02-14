@@ -1,13 +1,17 @@
 import "./topbar.css";
 import {ChatBubbleRounded, Search, Person, Wallet} from "@mui/icons-material";
+import {Link} from "react-router-dom";
 
 export default  function Topbar() {
+    const PF = process.env.REACT_APP_PUBLIC_FOLDER;
     return(
         <div className="topbarContainer">
 
             <div className="topbarLeft">
 
-                <span className="logo"><img src="assets\media\main-logo.png" alt="" height="70px" /></span>
+                <Link to="/">
+                    <span className="logo"><img src={`${PF}media/main-logo.png`} alt="" height="70px" /></span>
+                </Link>
 
             </div>
 

@@ -3,11 +3,9 @@ import Topbar from "../../components/Topbar/Topbar";
 import Leftbar from "../../components/Leftbar/Leftbar";
 import Feed from "../../components/Feed/Feed";
 import TravelFeed from "../../components/TravelFeed/TravelFeed";
-import { useState } from "react";
 
 export default function Profile(){
     const PF = process.env.REACT_APP_PUBLIC_FOLDER;
-    const [user, setUser] = useState({});
     return(
         <>
             <Topbar/>
@@ -18,7 +16,7 @@ export default function Profile(){
                     
                     <div className="pTop">
                         <div className="user">
-                            <img src={PF+user.profilePicture} alt="" />
+                            <img src= {`${PF}media/boy-1.png`} alt="" className="pPPhoto"/>
                         </div>
                         <div className="pName">
                             <p className="pUName">Jude Fletch</p>

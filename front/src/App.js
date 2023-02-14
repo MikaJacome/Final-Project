@@ -5,23 +5,28 @@ import SignUp from "./pages/SignUp/SignUp";
 import Home from "./pages/Home/Home";
 
 import {BrowserRouter as Router, Switch,Route,Redirect,} from "react-router-dom";
+import {AuthContext} from "./context/AuthContext";
+import { useContext } from "react";
 
 function App() {
+  const {user} = useContext(AuthContext);
   return (
     <Router>
       <Switch>
         <Route exact path="/">
-          <Home/>
+          {user ?<Home/> : <SignUp/>}
         </Route>
-        <Route path="/Login">
-          <Login/>
-        </Route>
+
+        <Route path="/Login">{user ? <Redirect to ="/" /> : <Login/>}</Route>
+
         <Route path="/SignUp">
-          <SignUp/>
+          {user ? <Redirect to="/"/> : <SignUp/>}
         </Route>
+
         <Route path="/Inspiration">
-          <Inspiration/>
+          {user ? <Redirect to="/"/> : <Inspiration/>}
         </Route>
+        
         <Route path="/Profile/:username">
           <Profile/>
         </Route>
