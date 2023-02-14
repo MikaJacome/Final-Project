@@ -2,9 +2,6 @@
     flex:8.5;
     padding-right: 20px;
     height: calc(100vh - 70px);
-    overflow-y: scroll;
-    position: sticky;
-    top: 70px;
 }
 
 .tFeedWrap{
