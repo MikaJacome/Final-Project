@@ -43,7 +43,7 @@ router.delete("/:id", async(req,res)=>{
     }
 });
 
-//say hey! and goodbye
+//like and dislike
 router.put("/:id/hey", async (req,res)=>{
     try{
         const post = await Journey.findById(req.params.id);
