@@ -9,7 +9,7 @@ export default function SignUp(){
                 <div className="loginleft">
 
                     <div className="loginLogo">
-                        <img src="../../../public/assets/media/main-logo.png" alt="logo" />
+                        <img src="assets/media/main-logo.png" alt="logo" />
                     </div>
                     <span className="loginDesc">
                     The world in just one click!

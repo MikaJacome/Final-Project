@@ -9,7 +9,7 @@ export default function Login(){
                 <div className="loginleft">
 
                     <div className="loginLogo">
-                        <img src="../../../public/assets/media/main-logo.png" alt="logo" />
+                        <img src="assets/media/main-logo.png" alt="logo" />
                     </div>
                     <span className="loginDesc">
                     The world in just one click!
@@ -22,7 +22,7 @@ export default function Login(){
                         <input type="email" placeholder="Your email" className="loginInput"/>
                         <input type="password"placeholder="Password" className="loginInput" />
                         <button className="loginBttn">Sign In</button>
-                        <span className="forgot">Forgot Password</span>
+                        <span className="forgot">Forgot Your Password?</span>
                         <button className="signUpBttn">Sign Up!</button>
                     </div>
 
