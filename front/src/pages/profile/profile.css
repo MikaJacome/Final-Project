@@ -1,0 +1,42 @@
+.profile{
+    display: flex;
+}
+
+.main{
+    flex: 9;
+}
+
+.user{
+    height: 300px;
+    position: relative;
+    padding-top: 50px;
+}
+
+.pPPhoto{
+    width: 20%;
+    height: 200px;
+    background-color: white;
+    margin:20px 420px 0 420px;
+    border: 1px solid;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pName{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pUName{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.pBody{
+    display: flex;
+}

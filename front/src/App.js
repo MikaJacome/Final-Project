@@ -1,9 +1,10 @@
 import Inspiration from "./pages/inspiration/Inspiration";
+import Profile from "./pages/profile/Profile";
 
 
 function App() {
   return (
-    <Inspiration/>
+    <Profile/>
   );
 }
 

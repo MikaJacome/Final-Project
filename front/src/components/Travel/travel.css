@@ -37,6 +37,13 @@
     justify-content: center;
 }
 
+input{
+    border-radius: 30px;
+    border: solid 1px;
+    border-color: #f8ecdd;
+    width: 70%;
+}
+
 .button{
     display: flex;
     align-items: flex-end;
