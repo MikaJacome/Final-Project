@@ -38,6 +38,12 @@
     margin: 0;
 }
 
+.follows{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
 .leftFav{
     display: flex;
     align-items: center;

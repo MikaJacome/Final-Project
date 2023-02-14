@@ -2,6 +2,8 @@ import "./leftbar.css"
 import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
 import HandshakeIcon from '@mui/icons-material/Handshake';
 import PublicIcon from '@mui/icons-material/Public';
+import {Users} from "../../testData"
+import Follows from "../follows/Follows";
 
 export default function Leftbar(){
     return(
@@ -32,14 +34,13 @@ export default function Leftbar(){
 
             </div>
             <div>
-                <ul className="leftFavTravellers">
-                    <li className="leftFav">
-                        <img className="leftFavPhoto" src="/assets/media/girl-3.png" alt="user profile" />
-                        <span className="LeftFavName">Alex Scott</span>
-                    </li>
+                <ul className="follows">
+                    {Users.map((u) => (
+                        <Follows key={u.id} user={u}/>
+                    ))}
                 </ul>
             </div>
             
         </div>
-    )
+    );
 }
